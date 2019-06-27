@@ -20,10 +20,6 @@ const TechListModal = () => {
     setLoading(false);
   };
 
-  if (loading) {
-    return <Preloader />;
-  }
-
   return (
     <div id='tech-list-modal' className='modal'>
       <div className='modal-content'>
