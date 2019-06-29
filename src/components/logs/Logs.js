@@ -5,7 +5,7 @@ import Preloader from "../layout/Preloader";
 import PropTypes from "prop-types";
 import { getLogs } from "../../actions/logActions";
 
-const Logs = ({ log: { logs, loading } }) => {
+const Logs = ({ getLogs, log: { logs, loading } }) => {
   // this is now coming from the app level state
   // const [logs, setLogs] = useState([]);
   // const [loading, setLoading] = useState(false);
@@ -25,7 +25,7 @@ const Logs = ({ log: { logs, loading } }) => {
   //   setLoading(false);
   // };
 
-  if (loading) {
+  if (loading || logs == null) {
     return <Preloader />;
   }
 
