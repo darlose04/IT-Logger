@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import TechItem from "./TechItem";
-import AddTechModal from "./AddTechModal";
 
 const TechListModal = () => {
   const [techs, setTechs] = useState([]);
